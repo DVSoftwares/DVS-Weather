@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+	<title>Weather</title>
+	<link rel="stylesheet" type="text/css" href="weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-title">
+        <h1 class="stardos-stencil-bold">DVSoftwares<br>Weather</h1>
+    </div>
+    
+    
+	<div class="container">
+        <div class="weather">
+            <input type="text" placeholder="Enter City Name" id="city" >
+            <button id="submit">Submit</button>
+            </div>
+            <div id="form">
+            <form class= "form" >
+                <p id="cityName"></p>
+                <p id="weather"></p>
+                <p id="temp"></p>
+                <p id="humidity"></p>
+                <p id="emoji"></p>
+                <p id="errorMsg"></p>
+            </form>
+            </div>
+            <p id="footer">Made with ❤️ by <a href="https://github.com/DVSoftwares">DVSoftwares</a></p>
+	</div>
+    <script src="weather.js"></script>  
+</body>  
+</html>

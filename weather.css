@@ -1,0 +1,139 @@
+/* Reset default margins and set a clean font family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Center the app completely on the screen with a subtle gradient background */
+body {
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.app-title{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 25px;
+    padding: 10px;
+    color: #010507;
+    box-shadow: 0 10px 25px rgba(3, 11, 23, 0.345);
+    border: none;
+}
+
+.stardos-stencil-regular {
+  font-family: "Stardos Stencil", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.stardos-stencil-bold {
+  font-family: "Stardos Stencil", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+/* Main card container holding the input and results */
+.container {
+    background-color:white;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(188, 12, 12, 0.279);
+    text-align: center;
+    margin-top: 100px
+}
+
+/* Layout for the input field and button */
+.weather {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+/* Style the text input field */
+#city {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#city:focus {
+    border-color: #74b9ff;
+}
+
+/* Style the submit button */
+#submit {
+    background-color: #74b9ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #0984e3;
+}
+#submit:active{
+    background-color: rgb(63, 68, 78);
+}
+
+/* Typography styles for the output data points */
+.form p {
+    font-size: 18px;
+    color: #2d3436;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+/* Make the city name stand out slightly more */
+#cityName {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2d3436;
+    margin-bottom: 15px;
+}
+
+/* Visual layout adjustments specifically for the weather condition emoji */
+#emoji {
+    font-size: 64px;
+    margin: 15px 0;
+}
+
+/* Explicit style layout for error state feedback */
+#errorMsg {
+    color: #d63031;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+#footer {
+    font-size: 14px;
+    color: #2d3436;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 400;                                           
+}
+@media (max-width: 480px) {
+    .weather {
+        flex-direction: column;
+    }
+
+}
